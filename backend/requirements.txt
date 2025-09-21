@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pypdf2
+python-dotenv
+prometheus-client
+# Vertex AI SDK
+google-cloud-aiplatform
+# Optional for OCR fallback
+pdf2image
+pillow
+pytesseract

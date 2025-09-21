@@ -1,0 +1,11 @@
+- Install Tesseract OCR on Windows:
+  - Download from https://github.com/UB-Mannheim/tesseract/wiki
+  - Add Tesseract to PATH (e.g., C:\Program Files\Tesseract-OCR)
+- Install Poppler (for pdf2image):
+  - Download binaries: http://blog.alivate.com.au/poppler-windows/
+  - Add bin folder to PATH
+- Python packages (already in requirements.txt):
+  - pdf2image, pillow, pytesseract
+- Enable OCR in backend:
+  - Set OCR_ENABLED=true in backend/.env
+

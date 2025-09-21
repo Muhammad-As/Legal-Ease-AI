@@ -1,0 +1,24 @@
+- Clarify Python version:
+  - Code uses `str | None` union types requiring Python 3.10+. Keep README at Python 3.10+.
+- Add OCR fallback (optional enhancement):
+  - Integrate `pytesseract` + `pdf2image` when PyPDF2 returns no text.
+- Add request size limits and PDF validation:
+  - FastAPI `UploadFile` size checks; reject non-PDF content types; handle >N MB gracefully.
+- Streaming responses for long computations:
+  - Consider server-sent events (SSE) for progressive UI updates.
+- Caching & rate limiting:
+  - Cache LLM results per file hash; apply simple rate limiting for public deployments.
+- Security:
+  - Ensure that uploaded files are not stored persistently; scan for malware if you introduce disk writes.
+- Observability:
+  - Add request logging and basic metrics (Prometheus/OTel) in production.
+- Frontend polish:
+  - Drag-n-drop upload, progress bars, skeleton loaders.
+  - Persist Q&A history in sessionStorage/localStorage.
+  - Add file size/type hints and graceful empty states.
+- CI/CD:
+  - Add GitHub Actions for lint/type checks and formatting.
+- Testing:
+  - Backend: unit tests for chunking, JSON cleaning, and prompt builders.
+  - Frontend: component tests for UploadCard and pages.
+

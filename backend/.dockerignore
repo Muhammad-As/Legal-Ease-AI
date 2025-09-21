@@ -1,0 +1,17 @@
+# Bytecode and environments
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Tests/artifacts
+*.log
+
+# Exclude local files not needed in image
+*.pdf
+*.tmp
+*.bak
+
+# Git
+.git/
+
