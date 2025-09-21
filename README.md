@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LegalEase AI Prototype (Upgraded)
 
 LegalEase AI helps you quickly understand legal documents by generating concise summaries, flagging risky clauses, and enabling interactive Q&A.
@@ -112,3 +113,6 @@ Or copy `frontend/.env.local.example` to `frontend/.env.local` and adjust.
 
 ## License
 Prototype for demonstration purposes only.
+=======
+# Legal-Ease-AI
+>>>>>>> origin/main
